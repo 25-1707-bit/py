@@ -28,6 +28,7 @@ def add(*args):
     result = 0
     for i in args:
         result = result + i
+    result = result / len(args)
     return result
 
 result = add(1,3,5,7,8,9)
