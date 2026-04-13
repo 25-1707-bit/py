@@ -9,7 +9,16 @@ dog = Animal("뽀삐", 3)
 cat = Animal("야옹이", 2)
 
 dog.speak("멍멍")
-cat.speak("야옹")
+cat.speak("야옹") M
+DRM 
+EnvironmentErrorRRE
+TimeoutErrorT]RM REUT
+yieldEYAWE
+ UYR
+AWER
+ MYRT
+AWE
+
 
 
 class Character:
@@ -98,4 +107,5 @@ hero = Character("히어로",20,50,50)
 captin_america = Character("캡턴어메리카",20,50,50)
 
 captin_america.attack2(hero)
+
 

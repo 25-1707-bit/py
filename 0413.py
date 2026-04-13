@@ -30,7 +30,7 @@ class Movie:
 
     def reserve(self,seats):
         if self.total_seats > self.reserved_seats:
-            self.reserved_seats += seats
+            self.reserved_seats += 1
         else:
             print("잔여 좌석 부족")
     def cancel(self,seats):
@@ -40,7 +40,34 @@ class Movie:
     def status(self):
         print(f"영화 제목 : {self.title} / 남은 좌석 : {self.total_seats-self.reserved_seats} / 예약된 자석 {self.reserved_seats}")
 
-movie = Movie("승현이는 멍청이",100,10)
-movie.reserve(10)
+movie = Movie("멍청이",100,10)
+movie.reserve (10)
 movie.cancel(1)
 movie.status()
+
+
+class LibaryBook:
+    def __init__(self,title,author,available):
+        self.title = title
+        self.author = author
+        self.avaliable = available
+    def borrow(self):
+        if self.avaliable == True :
+            print("대여 성공")
+            self.avaliable = False
+        else : 
+            print("대여 불가")
+    def return_book(self):
+        self.avaliable = True
+        print("반납 완료")
+    def status(self):
+        print(f"제목 : {self.title} / 저자 : {self.author} / 대여 가능 여부 : {self.avaliable}")
+    
+book = LibaryBook("DJ가 꿈이에요!","stg",True)
+book.borrow()
+book.return_book()
+book.borrow()
+book.borrow()
+book.status()
+
+    
