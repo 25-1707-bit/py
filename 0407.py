@@ -9,16 +9,7 @@ dog = Animal("뽀삐", 3)
 cat = Animal("야옹이", 2)
 
 dog.speak("멍멍")
-cat.speak("야옹") M
-DRM 
-EnvironmentErrorRRE
-TimeoutErrorT]RM REUT
-yieldEYAWE
- UYR
-AWER
- MYRT
-AWE
-
+cat.speak("야옹")
 
 
 class Character:
